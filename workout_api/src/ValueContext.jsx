@@ -18,22 +18,22 @@ export const ValueProvider = ({ children }) => {
 
     const handleNameChange = (newName) => {
        setName(newName);
-       doFetch(`http://localhost:1337/api/exercise?name=${newName}&type=${type}&muscle=${muscleGroup}&difficulty=${difficulty}`);
+       doFetch(`https://workout-backend-l2fzn.ondigitalocean.app/api/exercise?name=${newName}&type=${type}&muscle=${muscleGroup}&difficulty=${difficulty}`);
     };
   
     const handleTypeChange = (newType) => {
       setType(newType);
-      doFetch(`http://localhost:1337/api/exercise?name=${name}&type=${newType}&muscle=${muscleGroup}&difficulty=${difficulty}`);
+      doFetch(`https://workout-backend-l2fzn.ondigitalocean.app/api/exercise?name=${name}&type=${newType}&muscle=${muscleGroup}&difficulty=${difficulty}`);
     };
   
     const handleDifficultyChange = (newDifficulty) => {
       setDifficulty(newDifficulty);
-      doFetch(`http://localhost:1337/api/exercise?name=${name}&type=${type}&muscle=${muscleGroup}&difficulty=${newDifficulty}`);
+      doFetch(`https://workout-backend-l2fzn.ondigitalocean.app/api/exercise?name=${name}&type=${type}&muscle=${muscleGroup}&difficulty=${newDifficulty}`);
     };
   
     const handleMuscleGroupChange = (newMuscleGroup) => {
       setMuscleGroup(newMuscleGroup);
-      doFetch(`http://localhost:1337/api/exercise?name=${name}&type=${type}&muscle=${newMuscleGroup}&difficulty=${difficulty}`);
+      doFetch(`https://workout-backend-l2fzn.ondigitalocean.app/api/exercise?name=${name}&type=${type}&muscle=${newMuscleGroup}&difficulty=${difficulty}`);
     };
   
     return (
