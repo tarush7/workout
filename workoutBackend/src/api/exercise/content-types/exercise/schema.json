@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "singularName": "exercise",
+    "pluralName": "exercises",
+    "displayName": "Exercise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "muscle": {
+      "type": "string"
+    },
+    "equipment": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "text"
+    }
+  }
+}

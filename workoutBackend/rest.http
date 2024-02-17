@@ -1,0 +1,13 @@
+
+
+####
+GET http://localhost:1337/api/exercise?muscle=chest
+
+#####
+GET http://localhost:1337/api/exercise?muscle=biceps
+
+#### all parametrs
+GET http://localhost:1337/api/exercise?name=press&type=strength&muscle=chest&difficulty=beginner
+
+
+
